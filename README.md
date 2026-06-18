@@ -46,11 +46,12 @@ A Laravel-based Notes API with AI-powered semantic search and note summarization
   ```text
   http://127.0.0.1:8000/
   ```
-- If using XAMPP or a folder-based server, open:
+- If using XAMPP, make sure your web root is set to `c:\xampp\htdocs\AI-Useage\public`.
+  Then open:
   ```text
-  http://localhost/AI-Useage/public/
+  http://localhost/
   ```
-- Or open the direct app page:
+- If you cannot change the web root, use:
   ```text
   http://localhost/AI-Useage/public/app.html
   ```

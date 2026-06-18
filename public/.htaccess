@@ -1,5 +1,5 @@
 <IfModule mod_dir.c>
-    DirectoryIndex app.html index.php index.html
+    DirectoryIndex index.php app.html index.html
 </IfModule>
 
 <IfModule mod_rewrite.c>

@@ -144,7 +144,7 @@
 
     <script>
         let currentNoteId = null;
-        const apiBase = 'api/notes';
+        const apiBase = window.location.pathname.replace(/\/(?:app\.html|index\.php)?$/, '') + 'api/notes';
 
         async function setStatus(message, error = false) {
             const status = document.getElementById('statusMessage');
@@ -272,7 +272,7 @@
                 return;
             }
             try {
-                const res = await fetch(`api/notes/search?query=${encodeURIComponent(query)}`);
+                const res = await fetch(`${apiBase}/search?query=${encodeURIComponent(query)}`);
                 const body = await res.json();
                 renderNotes(body.data || []);
                 setStatus('Search complete.');
