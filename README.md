@@ -41,6 +41,20 @@ A Laravel-based Notes API with AI-powered semantic search and note summarization
    php artisan serve
    ```
 
+## View the frontend
+- If using `php artisan serve`, open:
+  ```text
+  http://127.0.0.1:8000/
+  ```
+- If using XAMPP or a folder-based server, open:
+  ```text
+  http://localhost/AI-Useage/public/
+  ```
+- Or open the direct app page:
+  ```text
+  http://localhost/AI-Useage/public/app.html
+  ```
+
 ## API Documentation
 - `GET /api/notes?page=1&limit=10` - List notes with pagination
 - `POST /api/notes` - Create a new note
