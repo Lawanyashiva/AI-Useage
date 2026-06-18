@@ -1,0 +1,3 @@
+# Keep the cache directory in git
+*
+!.gitignore
